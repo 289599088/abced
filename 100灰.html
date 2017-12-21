@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css1.css"/>
+</head>
+<body>
+
+
+
+
+<div class="xgy-body">
+
+    <div class="xgy-left">
+        <div class="xgy-h">
+            <p>WHOT HOT <img src="img/100_07.png" alt=""/></p>
+        </div>
+        <div class="xgy-vi">
+            <img src="img/100_11.png" alt=""/>
+        </div>
+
+        <div class="xgy-d">
+
+            <div class="xgy-d-l">
+                <img src="img/100_29.png" alt=""/>
+            </div>
+
+
+            <div class="xgy-d-r">
+                <ul>
+                    <li>现场实录：杭州机场国航系统溃</li>
+                    <li>网友自拍国航航班晚点后遇</li>
+                    <li>【拍客】绝对奢侈的航班  注意地41秒</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="xgy-right">
+
+
+        <div id="tab01">
+            <button>HOT WHAT  红店铺</button>
+            <button>EW SHOP 新开张</button>
+            <dl>
+                <dd>
+
+                    <div class="xgy-aaa">
+                    <div class="xgy-tu">
+                        <img src="img/100_17.png" alt=""/>
+                    </div>
+                    <div class="xgy-tu2">
+                        <h6>&nbsp;  &nbsp;红店铺红店铺红店铺</h6>
+                        <p>&nbsp;  &nbsp;区域：朝阳</p>
+                        <p> &nbsp;   &nbsp;人均：180</p>
+                        <p>    &nbsp;&nbsp; 人气：12345</p>
+                    </div>
+                </div>
+
+                    <div class="xgy-aaa">
+                        <div class="xgy-tu">
+                            <img src="img/100_17.png" alt=""/>
+                        </div>
+                        <div class="xgy-tu2">
+                            <h6>&nbsp;  &nbsp;红店铺红店铺红店铺</h6>
+                            <p>&nbsp;  &nbsp;区域：朝阳</p>
+                            <p> &nbsp;   &nbsp;人均：180</p>
+                            <p>    &nbsp;&nbsp; 人气：12345</p>
+                        </div>
+                    </div>
+
+                    <div class="xgy-aaa">
+                        <div class="xgy-tu">
+                            <img src="img/100_17.png" alt=""/>
+                        </div>
+                        <div class="xgy-tu2">
+                            <h6>&nbsp;  &nbsp;红店铺红店铺红店铺</h6>
+                            <p>&nbsp;  &nbsp;区域：朝阳</p>
+                            <p> &nbsp;   &nbsp;人均：180</p>
+                            <p>    &nbsp;&nbsp; 人气：12345</p>
+                        </div>
+                    </div>
+
+
+                </dd>
+                <dd>
+
+                    <div class="xgy-aaa">
+                        <div class="xgy-tu">
+                            <img src="img/100_17.png" alt=""/>
+                        </div>
+                        <div class="xgy-tu2">
+                            <h6>&nbsp;  &nbsp;红店铺红店铺红店铺</h6>
+                            <p>&nbsp;  &nbsp;区域：朝阳</p>
+                            <p> &nbsp;   &nbsp;人均：18000</p>
+                            <p>    &nbsp;&nbsp; 人气：12345</p>
+                        </div>
+                    </div>
+
+
+                    <div class="xgy-aaa">
+                        <div class="xgy-tu">
+                            <img src="img/100_17.png" alt=""/>
+                        </div>
+                        <div class="xgy-tu2">
+                            <h6>&nbsp;  &nbsp;红店铺红店铺红店铺</h6>
+                            <p>&nbsp;  &nbsp;区域：朝阳</p>
+                            <p> &nbsp;   &nbsp;人均：18000</p>
+                            <p>    &nbsp;&nbsp; 人气：12345</p>
+                        </div>
+                    </div>
+
+
+                    <div class="xgy-aaa">
+                        <div class="xgy-tu">
+                            <img src="img/100_17.png" alt=""/>
+                        </div>
+                        <div class="xgy-tu2">
+                            <h6>&nbsp;  &nbsp;红店铺红店铺红店铺</h6>
+                            <p>&nbsp;  &nbsp;区域：朝阳</p>
+                            <p> &nbsp;   &nbsp;人均：18000</p>
+                            <p>    &nbsp;&nbsp; 人气：12345</p>
+                        </div>
+                    </div>
+
+                </dd>
+
+            </dl>
+        </div>
+
+
+<div class="xgy-xxx">MORE</div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+<script type="text/javascript">
+
+    function Tab(id,navName,conName,navClassName){
+        var _this=this;
+        this.id=document.getElementById(id)
+        this.nav=this.id.getElementsByTagName(navName)
+        this.con=this.id.getElementsByTagName(conName)
+        this.navClass=navClassName
+        this.con[0].style.display="block";
+        for(var i=0;i<this.nav.length;i++){
+            this.nav[i].index=i;
+            this.nav[i].onclick=function(){
+                _this.changeTab(this)
+            }
+        }
+    }
+    Tab.prototype.changeTab=function(oTab){
+        for(var i=0;i<this.nav.length;i++){
+            this.nav[i].className=""
+            this.con[i].style.display="none"
+        }
+        oTab.className=this.navClass
+        this.con[oTab.index].style.display="block"
+    }
+    window.onload=function(){
+        new Tab("tab01","button","dd","checked")
+        new Tab("tab02","li","dt","checked")
+    }
+
+
+</script>

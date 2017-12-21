@@ -1,0 +1,156 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+.xgy-body{
+    width: 74%;
+
+    border-radius: 20px;
+}
+.xgy-left{
+    width: 49%;
+    float: left;
+    border-radius: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.xgy-right{
+    width: 49%;
+    float: left;
+    margin-left: 1%;
+}
+.xgy-h{
+    width: 100%;
+    font-size: 24px;
+
+}
+.xgy-vi{
+    width: 100%;
+}
+.xgy-vi img{
+    width: 95%;
+    margin: 0 auto;
+    margin: 0.5%;
+}
+.xgy-d{
+    margin-top: 4%;
+    width: 100%;
+    float: left;
+}
+
+.xgy-d-l{
+    width: 40%;
+    float: left;
+}
+
+.xgy-d-r{
+    width: 60%;
+    height: 100px;
+    float: left;
+}
+
+.xgy-right{
+    width: 49%;
+    float: left;
+    border-radius: 20px;
+    border: 1px solid #e5e5e5;
+
+}
+
+.xgy-top{
+    width: 100%;
+
+}
+
+
+
+
+
+.xgy-bto div{
+    display: none;
+    float: left;
+}
+
+.xgy-bto div:target{
+    display: block;
+}
+
+
+
+
+
+.xgy-top a{
+    display: inline-block;
+    width: 48%;
+    margin: 0.5%;
+    line-height: 30px;
+    text-decoration: none;
+    color: #ccc;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+}
+#x1{
+    width: 100%;
+    height: 20px;
+    float: left;
+    margin-top: 10%;
+}
+#x2{
+    width: 100%;
+    height: 20px;
+    float: left;
+    margin-top: 6.5%;
+}
+
+
+.xgy-aaa{
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    background: #fbfbfb;
+    margin-top: 20px;
+
+}
+
+.xgy-tu{
+    width: 35%;
+    float: left;
+    height: 100px;
+    margin-top: 39px;
+}
+.xgy-tu2{
+    width: 65%;
+    height: 100px;
+    float: left;
+    margin-top: 39px;
+
+}
+
+
+
+
+
+
+#tab01 dd{
+    display: none;
+}
+#tab02 dt{
+    display:none;
+}
+
+
+#tab01 button{
+    width: 50%;
+    float: left;
+}
+
+
+.xgy-xxx{
+    width: 100%;
+   line-height: 80px;
+    text-align: right;
+    float: left;
+}
+
+
